@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Josefin+Sans:wght@200;300;400;600&family=Overpass:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 12%, 8%);
+    position: relative;
+}
+.container .box {
+    width: 400px;
+    height: 415px;
+    background-color: rgb(31, 37, 49);
+    border-radius: 30px;
+    padding: 30px;
+}
+.content {
+    text-align: left;
+    display: block;
+}
+.content .icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(37, 44, 53);
+    border-radius: 50%;
+    position: relative;
+}
+.content .icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.text h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.text p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: hsl(216, 12%, 54%);
+    line-height: 25px;
+}
+.rates {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.rates div input {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.rates div label {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(37, 48, 55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(216, 12%, 54%);
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .3s;
+}
+.rates input:hover ~ label{
+    color: #fff;
+    background-color: hsl(25, 97%, 53%);
+}
+.rates input:checked ~ label {
+    color: #fff;
+    background-color: hsl(217, 12%, 63%);
+}
+button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    outline: none;
+    border: none;
+    padding: 13px 130px;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .4s;
+}
+button:hover {
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+
+.post {
+    text-align: center;
+    display: none;
+}
+.post img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.post h4 {
+    width: fit-content;
+    margin: 5px auto;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 18%);
+}
+.post h2 {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+.post p {
+    color: hsl(216, 12%, 54%);
+    line-height: 25px;
+    margin-top: 10px;
+    font-size: 15px;
+}
